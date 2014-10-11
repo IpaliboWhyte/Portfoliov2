@@ -3,8 +3,11 @@
 <head>
 	<title>IW</title>
 	<link rel="stylesheet" href="Css/style.css">
+  	<link rel="stylesheet" href="Css/animate.min.css">
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="Javascript/script.js"></script>
+	<script type="text/javascript" src="Javascript/rebound.js"></script>
+	<script type="text/javascript" src="Javascript/rebound.min.js"></script>
 </head>
 <body>
 
@@ -19,58 +22,62 @@
 				<span style="position: relative; top: 40%; transform: translateY(-40%);">Welcome<span>
 			</div>
 
-			<div class="body">
+			<div class="mainBody">
 
 			<span id="bodyOverlay">
 
+			<div class="containerWrapper">
 
-			<div class="ContainerBox" id="aboutMe">
+				<div class="ContainerBox" id="aboutMe">
 
-				<img class='aboutMeItem' id="profilePic" width="" height="" src="resources/images/whyte2.jpg">
+					<img class='aboutMeItem' id="profilePic" width="" height="" src="resources/images/whyte2.jpg">
 
-				<span class='aboutMeItem' style='padding: 15px;'>
-					Hello there, my name is <span id='standsOut'>Ipalibo whyte</span>, I
-					do <span id='standsOut'>iOS / web </span> development. I am also a 
-					<span id='standsOut'>UI/UX designer</span> and a <span id='standsOut'> Music producer </span> . I am 
-					Currently in my  final year @ The University 
-					of <span id='standsOut'> Nottingham </span> studying <span id='standsOut'> computer science </span> !
-				</span>
-				<hr>
-					<span class="aboutMeItem" id="standsOut">The team</span>
+					<span class='aboutMeItem' style='padding: 15px;'>
+						Hello there, my name is <span id='standsOut'>Ipalibo whyte</span>, I
+						do <span id='standsOut'>iOS / web </span> development. I am also a 
+						<span id='standsOut'>UI/UX designer</span> and a <span id='standsOut'> Music producer </span> . I am 
+						Currently in my  final year @ The University 
+						of <span id='standsOut'> Nottingham </span> studying <span id='standsOut'> computer science </span> !
+					</span>
+					<hr>
+						<span class="aboutMeItem" id="standsOut">The team</span>
 
-				<span style='display: inline-block; position: relative;'>
-					<span class="imageContainer">
-						<img class='aboutMeItem' id="smallprofilePic" src="resources/images/steve.jpg">
-							Steve
+					<span style='display: inline-block; position: relative;'>
+						<a href="https://twitter.com/StephenSowole"><span class="imageContainer">
+							<img class='aboutMeItem' id="smallprofilePic" src="resources/images/steve.jpg">
+								Steve
+						</span><a>
+
+						<a href="https://twitter.com/TosinAF"><span class="imageContainer">
+						    <img class='aboutMeItem' id="smallprofilePic" src="resources/images/tosin.jpg">
+								Tosin
+						</span></a>
+
+						<a href="https://twitter.com/DipoAreoye"><span class="imageContainer">
+							<img class='aboutMeItem' id="smallprofilePic" src="resources/images/dipo.jpg">
+								Dipo
+						</span></a>
+
+						<a href="https://uk.linkedin.com/pub/emmanuel-abiola/6a/31b/234"><span class="imageContainer">
+							<img class='aboutMeItem' id="smallprofilePic" src="resources/images/eman.jpg">
+								Emmanuel
+						</span></a>
+
+						<a href="https://uk.linkedin.com/in/chineduabalogu"><span class="imageContainer">
+							<img class='aboutMeItem' id="smallprofilePic" src="resources/images/chineduProfilepic.jpg">
+								Chinedu
+						</span></a>
 					</span>
 
-					<span class="imageContainer">
-						<img class='aboutMeItem' id="smallprofilePic" src="resources/images/tosin.jpg">
-							Tosin
-					</span>
+				</div>
 
-					<span class="imageContainer">
-						<img class='aboutMeItem' id="smallprofilePic" src="resources/images/dipo.jpg">
-							Dipo
-					</span>
+				<div class="ContainerBox" style="float: right;">
+					<button style ='margin-top:0px; background-color:#D37849;' id='myBtn' name='myProjects' value="projects" toOpen="#myProjectSection">My projects </button>
+					<button style= 'background-color:#EBBC26; ' id='myBtn' value="music" name="myMusic" toOpen="#myMusicSection"> My music </button>
+					<button style= 'background-color:#4DDDDD;' id='myBtn' value="skills" name="mySkills" toOpen="#mySkillsSection"> My skills </button>
+				
+				</div>
 
-					<span  class="imageContainer">
-						<img class='aboutMeItem' id="smallprofilePic" src="resources/images/eman.jpg">
-							Emmanuel
-					</span>
-
-					<span class="imageContainer">
-						<img class='aboutMeItem' id="smallprofilePic" src="resources/images/chineduProfilepic.jpg">
-							Chinedu
-					</span>
-				</span>
-
-			</div>
-
-			<div class="ContainerBox" style="float: right;">
-				<button style ='margin-top:0px; background-color:#D37849' id='myBtn' value="projects" toOpen="#myProjectSection">My projects </button>
-				<button style= 'background-color:#EBBC26' id='myBtn' value="music" toOpen="#myMusicSection"> My music </button>
-				<button style= 'background-color:#4DDDDD' id='myBtn' value="skills" toOpen="#mySkillsSection"> My skills </button>
 			</div>
 
 			</span>
@@ -81,10 +88,17 @@
 
 				<div class="contactContainer">
 
-					<span id="contactItem"><img src="resources/icons/soundcloudicon.png" height="13px" width="30px"></span>
-					<span id="contactItem"><img src="resources/icons/twittericon.png" height="13px" width="30px"></span>
-					<span id="contactItem"><img src="resources/icons/linkedinicon.png" height="13px" width="30px"></span>
-					<span id="contactItem"><span id ="resume">Resume</span></span>
+					<a href="http://soundcloud.com/pizzysproductions"><span id="contactItem"><img src="resources/icons/soundcloudicon.png" height="15px" width="32px"></span></a>
+
+					<a href="http://twitter.com/pizzy213beatz"><span id="contactItem"><img src="resources/icons/twittericon.png" height="15px" width="32px"></span></a>
+
+					<a href="http://uk.linkedin.com/pub/ipalibo-whyte/88/213/b98/"><span id="contactItem"><img src="resources/icons/linkedinicon.png" height="13px" width="32px"></span></a>
+
+					<a href="http://github.com/IpaliboWhyte"><span id="contactItem"><img src="resources/icons/github.png" height="15px" width="15px"></span></a>
+
+					<a href="mailto:ipalibowhyte@gmail.com?Subject= Love this ! What's the next big thing ?" target="_top"><span id="contactItem"><img src="resources/icons/email.png" height="20px" width="20px"></span></a>
+
+					<a href="http://soundcloud.com/pizzysproductions"><span id="contactItem"><span id ="resume">Resume</span></span></a>
 					
 				</div>
 
@@ -94,9 +108,10 @@
 
 		<span id='my_screens'>
 
+
 			<section id="myProjectSection">
 
-				<span class='headerSection'>
+				<span class='headerSection' id="myProjectBackground">
 
 					<span id='headerSectionOverlay'>
 						<span class='topHeader' style='background-color:transparent'>
@@ -109,15 +124,19 @@
 						</span>
 
 						<div class="textContainerBox">
-							<div id='overlayItem'>
+							<div class='overlayItem'>
 								<span id='standsOut' style='font-size: 20px;'> I </span> Love <span id='standsOut' style='font-size: 20px;'> Building </span> and really love developing awesome products that i am <span id='standsOut' style='font-size: 20px;' > Passionate </span> about 
 							</div>
 						</div>
+
+						<a href="#audioHunt"><img class="downarrow" id="downArrow_projects" style="" src="resources/icons/down.png" height="20" width="20"></a>
+
 					</span>
+				</span>
 					
 					<!-- *****************************  Audio Hunt Start ***************************** -->
 
-					<div class="littleBox">
+					<div class="littleBox" id="audioHunt">
 
 						<div id="littleBoxHeader" style="background-color: #D37849; text-align: left;">
 							<span id='littleBoxHeaderItem' style='margin-left:50px; margin-top:17px;'> AudioHunt </span>
@@ -463,22 +482,280 @@
 
 					<!-- *****************************  Bricks App Ends  ***************************** -->
 
-
-				</span>
-
 			</section>		
 
 			<section id="myMusicSection">
-				My Music
+
+				<span class='headerSection' id="myMusicBackground">
+
+					<span id='headerSectionOverlay'>
+						<span class='topHeader' style='background-color:transparent'>
+							<span id='topHeaderItem' style='float: left; margin: 50px; color:white'>
+								My Music
+							</span>
+							<span id='topHeaderItem' style='float: right; margin: 50px; color:white'>
+								<a> <img id="home" style="cursor:pointer" src="resources/images/arrow.png" width="30px" height="30px;"> </a>
+							</span>	
+						</span>
+
+						<div class="textContainerBox">
+							<div class='overlayItem'>
+								<span id='standsOut' style='font-size: 20px;'> Music </span> has always been a part of my life ! even make music while <span id='standsOut' style='font-size: 20px;' > courseworking </span> ! I really love producing and I'm available if you want to <span id='standsOut' style='font-size: 20px;'> Collab </span> <img src="resources/images/smiling30.png" width='25px' height="25px"> 
+							</div>
+						</div>
+
+						<a href="#started"><img class="downarrow" id="downArrow_music" style="" src="resources/icons/down.png" height="20" width="20"></a>
+
+					</span>
+
+				</span>
+
+
+					<!-- *****************************  How it started Starts  ***************************** -->
+
+					<div class="littleBox" id="started">
+
+						<div id="littleBoxHeader" style="background-color: #EBBC26; text-align: left;">
+							<img id='littleBoxHeaderItem' style="margin-left: 20px;" src="resources/icons/shout.png" height="20px" width="20px"> <span id='littleBoxHeaderItem' style='margin-left:30px; margin-top:17px;'> How it started </span>
+						</div>
+
+						<div id="descriptionBoxText" style="display: block; margin: 30px; width: 500px; height: auto; text-align: left;">
+							<p>Right from when i was little, i always loved to make cool stuff and always had a passion for music ! i went to music concerts, played the drums for the adult section(when i was just 10) on sunday services, broke my toys just to find out how it worked and use pieces to rebuild other toys, stutter lights etc.</p>
+
+							<p>
+							So what does breaking/recreating toys  have to do with music ? well i think for me its all about your interest of inventing new things from pieces and when you relate it to music, it all makes sense. Music is essentially combining tons of sounds together, mixing them and making that awesome progession/drop according to your taste with fl studio i have been able to bring my thoughts to life as a form of music.  </p>
+						</div>
+						
+					</div>
+
+					<!-- *****************************  How it started Ends  ***************************** -->
+
+
+					<!-- *****************************  Watch me Starts  ***************************** -->
+
+					<div class="littleBox">
+
+						<div id="littleBoxHeader" style="background-color: #3C5B63; text-align: left;">
+							<img id='littleBoxHeaderItem' style="margin-left: 20px;" src="resources/icons/movie.png" height="15px" width="30px"> <span id='littleBoxHeaderItem' style='margin-left:30px; margin-top:17px;'> Watch me </span>
+						</div>
+
+						<div id="" style="margin: 0 auto; display: block; margin: 50px;">
+						<iframe width="640" height="360" src="http://www.youtube.com/embed/OCAdqLnN7xg" frameborder="0" allowfullscreen></iframe>
+						</div>
+						
+					</div>
+
+					<!-- *****************************  Watch me Ends  ***************************** -->
+
+
+
+					<!-- *****************************  Listen Starts  ***************************** -->
+
+					<div class="littleBox">
+
+						<div id="littleBoxHeader" style="background-color: #EBBC26; text-align: left;">
+							<img id='littleBoxHeaderItem' style="margin-left: 20px;" src="resources/icons/headphone.png" height="20px" width="20px"> <span id='littleBoxHeaderItem' style='margin-left:30px; margin-top:17px;'> Listen to the beats </span>
+						</div>
+
+						<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/3471183&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+						
+					</div>
+
+					<!-- *****************************  Listen Ends  ***************************** -->							
+				
 			</section>
 
 			<section id="mySkillsSection">
-				My Skills
+
+				<span class='headerSection' id="mySkillsBackground" style='height: 100%'>
+
+					<span id='headerSectionOverlay' style='height: 100%'>
+						<span class='topHeader' style='background-color:transparent'>
+							<span id='topHeaderItem' style='float: left; margin: 50px; color:white'>
+								My Skills
+							</span>
+							<span id='topHeaderItem' style='float: right; margin: 50px; color:white'>
+								<a> <img id="home" style="cursor:pointer" src="resources/images/arrow.png" width="30px" height="30px;"> </a>
+							</span>	
+						</span>
+
+						<div id="littleCircleWrapper">
+
+							<div class="littleCircle" id="uxUiCircle" name='uxUiCircle' toOpen='uiUx'>
+
+								<div id="littleCircleItem">
+									<img style="margin-top:70px; margin-bottom:10px;" src="resources/icons/paint.png" width="50" height="50">
+									<br>
+									<div class="littleBoxText">
+									<span>U<span style="color:#D37849">I</span><span style="font-size:22px;">/</span>U<span style="color:#50E3C2">X</span></span>
+									</div>
+								</div>
+								
+							</div>
+
+							
+
+							<div class="littleCircle" id="codingCircle" name='codingCircle' toOpen='music'>
+							
+								<div id="littleCircleItem">
+									<img style="margin-top:70px; margin-bottom:10px;" src="resources/icons/piano.png" width="50" height="50">
+									<br>
+									<div class="littleBoxText">
+									Music
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="littleCircle" id="musicCircle" name='musicCircle' toOpen='coding'>
+							
+								<div id="littleCircleItem">
+									<img style="margin-top:70px; margin-bottom:30px;" src="resources/icons/codetag.png" width="50" height="30">
+									<br>
+									<div class="littleBoxText">
+									Coding
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+							<div class="infoBox" name='uiUx' style="display:none">
+								<div style="display:inline; float: left; text-align: left; color:#4F6B73">
+									<span style='font-weight: bold;'> Themes: </span>
+									<br>
+									<div style="margin: 20px; height:160px; width:400px; display: inline-block;">
+										<img style="margin-left: 0px;" src="resources/images/profilePage-tagbutton-highlighted.gif" width="175px;" height="110px;">
+
+										<img style="margin-left: 70px;" src="resources/images/calendarapp.png" width="65px;" height="110px;">
+									</div>
+								</div>
+								<div style="display:inline; float: left; text-align: left; color:#4F6B73">
+									<span style='font-weight: bold;'> Tools I use: </span>
+									<ul>
+										<li>
+											Photoshop
+										</li>
+										<br>
+										<li>
+											Sketch
+										</li>
+										<br>
+										<li>
+											Slicy
+										</li>
+										<br>
+										<li>
+											Colourlovers
+										</li>
+										<br>
+										<li>
+											Flatuicolorpicker
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="infoBox" name='music' style="display:none; padding:0px; height: 220px;">
+
+								<div style="margin: 0 auto; color:#4F6B73">
+
+									<div id="flstudio">
+										<div id='flstudioWrapper'>
+											<span style='color: white; font-size: 40px; display: inline-block; margin: 60px;'>
+												FL Studio <span style='font-size: 11px'>v 11</span>
+											</span>
+										</div>
+									</div>
+		
+									<div style='padding: 10px; font-weight: bold; letter-spacing: 2px;'>
+										Produced for:
+									</div>
+
+									<ul style="display:inline-block;">
+										<li>
+											Bricks
+										</li>
+										<br>
+										<li>
+											Smiley Dash
+										</li>
+										<br>
+										<li>
+											Assassins creed
+										</li>
+									</ul>			
+	
+								</div>
+
+							</div>
+
+							<div class="infoBox" name='coding' style="display:none">
+
+								<div style="display: inline-block; margin:0 auto; color:#4F6B73; font-weight: bold;">
+									Programming Languages
+								</div>
+
+								<div style="display:inline-block; color:#4F6B73; margin: 0 auto;">
+									<ul>
+										<li>
+											Objective C
+										</li>
+										<li>
+											C / C++
+										</li>
+										<li>
+											Java
+										</li>
+										<li>
+											Python
+										</li>
+										<li>
+											Haskell
+										</li>
+										<li>
+											Javascript
+										</li>
+										<li>
+											PHP
+										</li>
+										<li>
+											Html
+										</li>
+										<li>
+											Css
+										</li>
+										<li>
+											Node Js
+										</li>
+										<li>
+											Mongo db
+										</li>
+										<li>
+											Angular
+										</li>
+										<li>
+											Socket.io
+										</li>
+										<li>
+											MySQL
+										</li>
+									</ul>
+								</div>
+							</div>
+
+					</span>
+
+				</span>
+				
 			</section>
+
 
 		</span>
 
 	</section>
+
 </div>
 
 </body>
