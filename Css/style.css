@@ -342,9 +342,9 @@ hr {
 
 .infoBox{
 
-	width: 800px;
+	width: 900px;
 	display: inline-block;
-	height: 200px;
+	height: auto;
 	background-color: white;
 	border-radius: 10px;
 	padding: 20px;
@@ -442,7 +442,7 @@ hr {
 }
 
 ul {
-
+	list-style-type: none;
 }
 
 li {
