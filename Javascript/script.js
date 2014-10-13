@@ -26,25 +26,35 @@ $( document ).ready(function() {
 		// show corresponding 
 		$(pageID).show(function(){
 
-			// Slides the container and shows the projects page
-
+			// Overflow for the wrapper is now visibile
+			// Slides the container to the shown page
 			$(".main").css('overflow-y','visible');
 			$(".mainContainer").animate({right:'100%'}, sliderSpeed);
 
-			$('#uxUiCircle').delay(500).animate({opacity :'1'});
-			$('#codingCircle').delay( 1000 ).animate({opacity :'1'});
-			$('#musicCircle').delay( 1500 ).animate({opacity :'1'});
+			if (pageID == '#mySkillsSection') {
+				$('#uxUiCircle').delay(300).animate({opacity :'1'});
+				$('#codingCircle').delay( 500 ).animate({opacity :'1'});
+				$('#musicCircle').delay( 700 ).animate({opacity :'1'});
+			}
 
+			if (pageID == '#myProjectSection') {
+				$('.overlayItem').addClass('animated bounceInDown');
+				$('.overlayItem').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+					$('#downArrow_projects').addClass('animated rubberBand');
+					$('#downArrow_projects').css('opacity','1');
+					$('.overlayItem').removeClass('animated bounceInDown');
+				});
+			}
 
-			$('.overlayItem').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-				$('#downArrow_projects').addClass('animated rubberBand');
-				$('#downArrow_projects').css('opacity','1');
-
-				$('#downArrow_music').addClass('animated flipInY');
-				$('#downArrow_music').css('opacity','1');
-
-			});
-			
+			if (pageID == '#myMusicSection') {
+				$('.overlayItem').addClass('animated bounceInDown');
+				$('.overlayItem').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+					$('#downArrow_music').addClass('animated flipInY');
+					$('#downArrow_music').css('opacity','1');
+					$('.overlayItem').removeClass('animated bounceInDown');
+				});
+			}
+				
 		}); 
 
 	});
@@ -155,6 +165,4 @@ $(function() {
 		$('[name='+infoToOpen+']').addClass('animated pulse');
 
 	});
-
-
 });
