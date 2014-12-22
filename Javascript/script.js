@@ -67,6 +67,22 @@ $( document ).ready(function() {
 
 	});
 
+	$('a#squidoolGame').click(function(){
+		$('game').css('display', 'inline-block')
+		$('game').animate({
+			opacity: '1'
+		},1000);
+
+		$('iframe').attr(src, $(this).attr(src));
+		
+	});
+
+	$('game').click(function(){
+		$(this).css('display', 'none');
+		$('iframe').remove();
+	});
+
+
 });
 
 function setSpringFor(element){
