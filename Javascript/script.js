@@ -132,13 +132,10 @@ function setSpringFor(element){
 
 function animateOnStart(){
 	$(".containerWrapper").animate({
-    width: "1300",
     opacity: 1
     
   }, 2000, function() {
-    $(".containerWrapper").css(
-    	"max-width", "1300"
-    );
+
   });
 }
 
