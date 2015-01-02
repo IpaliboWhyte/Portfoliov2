@@ -79,7 +79,7 @@ $( document ).ready(function() {
 
 	$('game').click(function(){
 		$(this).css('display', 'none');
-		$('iframe').remove();
+		$('iframe#gameFrame').remove();
 	});
 
 
