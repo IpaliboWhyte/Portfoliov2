@@ -64,7 +64,7 @@ html, body{
 .aboutMeItem{
 	display: block;
 	text-align: center;
-	color: #A0AEB2;
+	color: white;
 	font-family: 'Avenir', 'Georgia', serif; 
 	font-size: 16px;
 }
@@ -165,7 +165,7 @@ img:hover {
 }
 
 #aboutMe{
-	background-color: #EDEDED;
+	background-color: rgba(255,255,255,0.1);
 }
 
 #myBtn{
