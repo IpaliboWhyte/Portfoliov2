@@ -1,6 +1,7 @@
 var sliderSpeed = 400;
 var audioElement = document.createElement('audio');
 audioElement.setAttribute('src', 'resources/sounds/blop.wav');
+audioElement.load();
 
 $( document ).ready(function() {
 
