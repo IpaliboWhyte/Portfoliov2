@@ -2,7 +2,7 @@ html, body{
 	height: 100%;
     margin: 0;
     text-align: center;
-    font-family: 'Avenir', 'Georgia', serif; 
+    font-family: 'Avenir', 'Georgia', serif;
 }
 
 .main{
@@ -15,7 +15,7 @@ html, body{
 .containerWrapper {
 	opacity: 0;
     max-width: 1300px;
-    width:1300px; 
+    width:1300px;
     height:450px;
     margin: 0 auto;
   }
@@ -29,10 +29,10 @@ html, body{
 
 #welcomeSection{
 
-	background-image: url('../resources/images/bgBig.jpeg');
+	background-image: url('../resources/images/sf-city-florian.jpg');
     background-size:   cover;                      /* <------ */
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
 
 	width: 50%;
 	height:100%;
@@ -60,7 +60,7 @@ html, body{
 }
 
 #topHeaderItem{
-	font-family: 'Avenir', 'Helvetica', serif; 
+	font-family: 'Avenir', 'Helvetica', serif;
 	font-size: 15px;
 	letter-spacing: 3px;
 	font-weight: bold;
@@ -70,7 +70,7 @@ html, body{
 	display: block;
 	text-align: center;
 	color: white;
-	font-family: 'Avenir', 'Georgia', serif; 
+	font-family: 'Avenir', 'Georgia', serif;
 	font-size: 16px;
 }
 
@@ -89,7 +89,7 @@ img#smallprofilePic{
 	width: 60px;
 	height: 60px;
 	border-radius: 30px;
-	
+
 }
 
 img#profilePic{
@@ -97,9 +97,9 @@ img#profilePic{
     margin-right: auto;
 	margin-top: 30px;
 	margin-bottom: 10px;
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
 }
 
 img{
@@ -116,7 +116,7 @@ img:hover {
 .welcomeHeader{
 	background-color: #F2F2F2;
 	color: #4D6971;
-	font-family: 'helvetica', 'Georgia', serif; 
+	font-family: 'helvetica', 'Georgia', serif;
 	letter-spacing: 2px;
 	font-size: 13px;
 	font-weight: bold;
@@ -150,7 +150,7 @@ img:hover {
 	width: 500px;
 	height: 350px;
 	border-radius: 5px;
-	font-family: 'Avenir', 'Georgia', serif; 
+	font-family: 'Avenir', 'Georgia', serif;
 	font-size: 12px;
 	color: #A0AEB2;
 	margin-top: 150px;
@@ -165,7 +165,7 @@ img:hover {
 }
 
 #aboutMe{
-	background-color: rgba(255,255,255,0.1);
+	background-color: rgba(0,0,0,0.3);
 }
 
 #myBtn{
@@ -184,19 +184,19 @@ button{
 	border-radius: 5px;
 	width: 400px;
 	height: 85px;
-	font-family: proxima-nova,sans-serif; 
+	font-family: proxima-nova,sans-serif;
 	letter-spacing: 5px;
 
 }
 
-hr { 
+hr {
 
-	display: block; 
+	display: block;
 	height: 0.5px;
-    border: 0; 
+    border: 0;
     border-top: 1px solid #ccc;
     opacity: 0.3;
-    padding: 0; 
+    padding: 0;
 	width: 50%;
 }
 
@@ -238,18 +238,18 @@ hr {
 
 #flstudio{
 	position: relative;
-	width:50%; 
-	height: 220px; 
+	width:50%;
+	height: 220px;
 	float:left;
 	background-image: url('../resources/images/FLStudio11.png');
 	background-size:   cover;                      /* <------ */
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
 }
 
 #flstudioWrapper{
-	width: 100%; 
-	height: 100%; 
+	width: 100%;
+	height: 100%;
 	display: inline-block;
 	background-color: rgba(80, 227, 194, 0.9);
 }
@@ -266,11 +266,11 @@ hr {
 
 	width: 100%;
 	height: 500px;
-	display: block; 
+	display: block;
 	/*background-image: url('../resources/images/work.jpg');*/
     background-size:   cover;                      /* <------ */
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
 
 }
 
@@ -283,7 +283,7 @@ hr {
 
 .overlayItem{
 
-	color:white; 
+	color:white;
 	font-family: 'helvetica', 'Georgia', serif;
 	font-weight: lighter;
 	font-size: 15px;
@@ -291,7 +291,7 @@ hr {
 }
 
 #resume{
-	color:white; 
+	color:white;
 	font-weight:bold;
 	font-family: 'helvetica', 'Georgia', serif;
 	font-size: 12px;
@@ -309,8 +309,8 @@ hr {
 
 .downarrow{
 	opacity: 1;
-	display: block; 
-	margin: 0 auto; 
+	display: block;
+	margin: 0 auto;
 	margin-top: 130px;
 }
 
@@ -381,7 +381,7 @@ hr {
 
 #littleBoxHeaderItem{
 	display: inline-block;
-	color:white; 
+	color:white;
 	font-family: 'helvetica', 'Georgia', serif;
 	letter-spacing: 2px;
 	font-weight: bold;
@@ -421,7 +421,7 @@ hr {
 	margin: 10px;
 	margin-top: 30px;
 	color: #A0AEB2;
-	font-family: 'Avenir', 'Georgia', serif; 
+	font-family: 'Avenir', 'Georgia', serif;
 	font-size: 11px;
 	font-weight: bold;
 
@@ -503,4 +503,3 @@ game{
  a:link, a:visited {
     color: #A0AEB2;
 }
-
